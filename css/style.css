@@ -1,4 +1,42 @@
-ffghfghfgh
+/*
 
-ffghfghfghfgh
-fgh
+Цвета
+
+фон 1 - rgb(132,157,143)
+фон 2 - rgb(137,150,166)
+фон 3 - rgb(157,139,132)
+
+subscribe - rgb(248,247,244)
+address - rgb(255,255,254)
+
+
+
+*/
+
+
+
+body  {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff  ;
+  font-weight: normal;
+  font-family: 'Roboto Regular';
+}
+
+.banner-name  {
+  font-size: 35px;
+  line-height: 41px;
+  color: #323232;
+  font-weight: normal;
+  font-family: 'Roboto Bold';
+
+}
+
+.bestseller-item-name  {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: 'Roboto Medium';
+
+}
