@@ -6,6 +6,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+
 <!-- ********************Шапка******************** -->
     <header class="page-header">
 
@@ -24,7 +25,7 @@
                 <a href="#">Новинки</a>
               </li>
               <li>
-                <a href="catalog.html">Сливочное</a>
+                <a href="#">Сливочное</a>
               </li>
               <li>
                 <a href="#">Щербеты</a>
@@ -48,13 +49,13 @@
 
   <!--Поиск-->
       <p class="header-search">
-        <span class="header-search-icon"></span>
+        <a class="header-search-icon">Поиск</a>
       </p>
 
   <!-- Личный кабинет       -->
       <ul class="header-user-interface">
         <li>
-          <a>Вход</a>
+          <a href="#">Вход</a>
         </li>
       </ul>
 
@@ -109,14 +110,12 @@
 
     <!-- Хит #1 -->
         <article class="catalog-item catalog-item_hit">
-          <h3 class="catalog-item-name">
-            <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="catalog-item.html">
+          <a href="#">
+            <h3 class="catalog-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <p class="catalog-item-image">
               <img src="img/catalog-item-1-1200.jpg" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
-            </a>
-          </p>
+            </p>
+          </a>
           <p class="catalog-item-price">
             <span class="catalog-item-price-roubles">310 &#8381;</span>
             <span class="catalog-item-price-kilos">/кг</span>
@@ -125,14 +124,12 @@
 
     <!-- Хит #2 -->
         <article class="catalog-item catalog-item_hit">
-          <h3 class="catalog-item-name">
-            <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="catalog-item.html">
+          <a href="#">
+            <h3 class="catalog-item-name">Сливочно-кофейное с кусочками шоколада</h3>
+            <p class="catalog-item-image">
               <img src="img/catalog-item-2-1200.jpg" width="267" height="267" alt="Сливочно-кофейное мороженное с кусочками шоколада">
-            </a>
-          </p>
+            </p>
+          </a>
           <p class="catalog-item-price">
             <span class="catalog-item-price-roubles">380 &#8381;</span>
             <span class="catalog-item-price-kilos">/кг</span>
@@ -141,14 +138,12 @@
 
     <!-- Хит #3 -->
         <article class="catalog-item catalog-item_hit">
-          <h3 class="catalog-item-name">
-            <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="catalog-item.html">
+          <a href="#">
+            <h3 class="catalog-item-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <p class="catalog-item-image">
               <img src="img/catalog-item-3-1200.jpg" width="267" height="267" alt="Сливочно-клубничное мороженное с присыпкой из белого шоколада">
-            </a>
-          </p>
+            </p>
+          </a>
           <p class="catalog-item-price">
             <span class="catalog-item-price-roubles">355 &#8381;</span>
             <span class="catalog-item-price-kilos">/кг</span>
@@ -157,14 +152,12 @@
 
     <!-- Хит #4 -->
         <article class="catalog-item catalog-item_hit">
-          <h3 class="catalog-item-name">
-            <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="catalog-item.html">
+          <a href="#">
+            <h3 class="catalog-item-name">Сливочное крем-брюле с карамельной подливкой</h3>
+            <p class="catalog-item-image">
               <img src="img/catalog-item-4-1200.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            </a>
-          </p>
+            </p>
+          </a>
           <p class="catalog-item-price">
             <span class="catalog-item-price-roubles">415 &#8381;</span>
             <span class="catalog-item-price-kilos">/кг</span>
@@ -183,6 +176,7 @@
         </ul>
       </section>
 
+  <!-- Блог и рассылка -->
       <section class="follow-us">
         <!-- Новое в блоге -->
         <article class="news">
@@ -195,7 +189,8 @@
           <h2 class="visually-hidden">Подписаться на рассылку</h2>
           <form class="subscribe-form" method="post" action="#">
             <p>
-              <input class="subscribe-form-input-email" type="email" placeholder="Электронная почта">
+              <label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
+              <input name="subscribe-form-email" id="subscribe-form-email" type="email" placeholder="Электронная почта">
             </p>
             <input class="button" type="button" value="Отправить">
           </form>
@@ -213,7 +208,7 @@
           <p>(с 10 до 20 ежедневно)</p>
         </address>
         <p>
-          <a class="link-as-button" href="#">Форма обратной связи</a>
+          <button type="button">Форма обратной связи</button>
         </p>
       </section>
     </main>
@@ -248,22 +243,25 @@
 <!-- ********************Дополнительные окна******************** -->
 
   <!-- Форма поиска -->
-    <section class="search">
+    <section class="search-popup">
       <h2 class="visually-hidden">Поиск по сайту</h2>
       <form class="search-form" method="get" action="#">
-        <input type="search" name="user-search">
+        <label class="visualy-hidden" for="search-form-query" class="visually-hidden">Поиск по сайту</label>
+        <input type="search" name="search-form-query" id="search-form-query">
       </form>
     </section>
 
   <!-- Форма логина -->
-    <section class="login">
-      <h2 class="visualy-hidden">Личный кабинет</h2>
+    <section class="login-popup">
+      <h2 class="visualy-hidden">Вход на сайт</h2>
       <form class="login-form" method="post" action="#">
         <p>
-          <input type="email" name="user-email" placeholder="Электронная почта">
+          <label class="visualy-hidden" for="login-form-email" class="visually-hidden">Электронная почта</label>
+          <input type="email" name="login-form-email" id="login-form-email" placeholder="Электронная почта">
         </p>
         <p>
-          <input type="password" name="user-password" placeholder="Пароль">
+          <label class="visualy-hidden" for="login-form-password" class="visually-hidden">Электронная почта</label>
+          <input type="password" name="login-form-password" id="login-form-password" placeholder="Пароль">
         </p>
         <input class="button" type="button" value="Войти">
         <p class="login-forgot-password"><a href="#">Забыли пароль?</a></p>
@@ -272,24 +270,25 @@
     </section>
 
   <!-- Форма обратной связи -->
-    <section class="feedback modal">
+    <section class="feedback-modal">
       <h2 class="visualy-hidden">Форма обратной связи</h2>
       <h3>Мы обазятельно вам ответим!</h3>
       <form class="feedback-form" method="post" action="#">
         <p>
-          <input type="text" name="user-name" placeholder="Как вас зовут?">
+          <label class="visualy-hidden" for="feedback-form-username" class="visually-hidden">Электронная почта</label>
+          <input type="text" name="feedback-form-username" id="feedback-form-username" placeholder="Как вас зовут?">
         </p>
         <p>
-          <input type="email" name="user-email" placeholder="Ваша почта для ответа?">
+          <label class="visualy-hidden" for="feedback-form-email" class="visually-hidden">Электронная почта</label>
+          <input type="email" name="feedback-form-email" id="feedback-form-email" placeholder="Ваша почта для ответа?">
         </p>
         <p>
-          <textarea placeholder="Напишите что-нибудь..."></textarea>
+          <label class="visualy-hidden" for="feedback-form-message" class="visually-hidden">Текст обращения</label>
+          <textarea id="feedback-form-message" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <input class="button" type="button" value="Отправить">
       </form>
-      <p>
-        <span class="modal-close">X</span>
-      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
 

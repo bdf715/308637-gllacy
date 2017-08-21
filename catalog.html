@@ -9,22 +9,23 @@
 
 <!-- ********************Шапка******************** -->
     <header class="page-header">
-      <!-- Логотип -->
+
+  <!-- Логотип -->
       <p class="header-logo">
         <img src="#" width="111" height="111" alt="Глейси. Магазин мороженного">
       </p>
 
-      <!-- Главное меню -->
+  <!-- Главное меню -->
       <nav class="main-navigation">
         <ul class="main-menu">
           <li class="main-menu-active">
-            <a href="catalog.html">Каталог</a>
+            <a href="#">Каталог</a>
             <ul class="main-menu-catalog">
               <li>
                 <a href="#">Новинки</a>
               </li>
               <li>
-                <a href="catalog.html">Сливочное</a>
+                <a href="#">Сливочное</a>
               </li>
               <li>
                 <a href="#">Щербеты</a>
@@ -48,18 +49,18 @@
 
       <!--Поиск-->
       <p class="header-search">
-        <span class="header-search-icon"></span>
+        <a class="header-search-icon">Поиск</a>
       </p>
 
       <!-- Личный кабинет       -->
       <ul class="header-user-interface">
         <li>
-          <a>Вход</a>
+          <a href="#">Вход</a>
         </li>
       </ul>
 
       <!-- Корзина -->
-      <p class="header-basket header-basket-empty">
+      <p class="header-basket header-basket-full">
         <a href="#">2 товара</a>
       </p>
 
@@ -74,26 +75,26 @@
       <!-- Навигация Хлебные крошки -->
       <nav class="breadcrumbs-navigation">
         <ul class="breadcrumbs-items">
-          <li>Главная</li>
-          <li>Каталог</li>
-          <li>Сливочное</li>
+          <li><a href="#">Главная</a></li>
+          <li<a href="#">>Каталог</a></li>
+          <li><a href="#">Сливочное</a></li>
         </ul>
       </nav>
 
       <!-- Заголовок страницы -->
-      <h1> Сливочное мороженное</h1>
+      <h1>Сливочное мороженное</h1>
 
       <!-- Фильтр по товарам -->
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter-form" action="index.html" method="get">
+        <form class="filter-form" action="#" method="get">
           <!-- Верхний ряд элементов формы -->
           <fieldset class="filter-group">
 
             <!-- Список сортировка -->
             <p>
-              <label for="filter-sort">Сортировака:</label>
-              <select class="filter-form-element" name="filter-sort" id="filter-sort">
+              <label for="filter-form-sort">Сортировка:</label>
+              <select class="filter-form-element" name="filter-sort" id="filter-form-sort">
                 <option value="popular">по популярности</option>
                 <option value="cheaper-first">сначала недорогие</option>
                 <option value="exspenisve-first">сначала дорогие</option>
@@ -102,27 +103,29 @@
             </p>
             <!-- Ползунок -->
             <p>
-              <label for="filter-price">Цена: 100 руб. - 500 руб.</label>
-              <input type="range" name="filter-price" min="100" max="500" id="filter-price" >
+              <label for="filter-form-price">Цена: 100 руб. - 500 руб.</label>
+              <input type="range" name="filter-price" min="100" max="500" id="filter-form-price" >
             </p>
             <!-- Радиокнопки -->
+
+
             <div>
               <label>Жирность:</label>
               <p>
-                <input type="radio" id="filter-fat-1" name="filter-fat" value="0">
-                <label for="filter-fat-1">0%</label>
+                <input type="radio" id="fat-1" name="fat" value="0">
+                <label for="fat-1">0%</label>
               </p>
               <p>
-                <input type="radio" id="filter-fat-2" name="filter-fat" value="less-10" checked>
-                <label for="filter-fat-2">до 10%</label>
+                <input type="radio" id="fat-2" name="fat" value="less-10" checked>
+                <label for="fat-2">до 10%</label>
               </p>
               <p>
-                <input type="radio" id="filter-fat-3" name="filter-fat" value="less-30">
-                <label for="filter-fat-3">до 30%</label>
+                <input type="radio" id="fat-3" name="fat" value="less-30">
+                <label for="fat-3">до 30%</label>
               </p>
               <p>
-                <input type="radio" id="filter-fat-4" name="filter-fat" value="more-30">
-                <label for="filter-fat-4">выше 30%</label>
+                <input type="radio" id="fat-4" name="fat" value="more-30">
+                <label for="fat-4">выше 30%</label>
               </p>
             </div>
           </fieldset>
@@ -131,24 +134,24 @@
             <div>
               <label>Наполнители:</label>
               <p>
-                <input type="checkbox" id="filter-topping-1" name="filter-topping" checked>
-                <label for="filter-topping-1">шоколадные</label>
+                <input type="checkbox" id="topping-1" name="topping" checked>
+                <label for="topping-1">шоколадные</label>
               </p>
               <p>
-                <input type="checkbox" id="filter-topping-2" name="filter-topping" checked>
-                <label for="filter-topping-2">сахарные присыпки</label>
+                <input type="checkbox" id="topping-2" name="topping" checked>
+                <label for="topping-2">сахарные присыпки</label>
               </p>
               <p>
-                <input type="checkbox" id="filter-topping-3" name="filter-topping">
-                <label for="filter-topping-3">фрукты</label>
+                <input type="checkbox" id="topping-3" name="topping">
+                <label for="topping-3">фрукты</label>
               </p>
               <p>
-                <input type="checkbox" id="filter-topping-4" name="filter-topping">
-                <label for="filter-topping-4">сиропы</label>
+                <input type="checkbox" id="topping-4" name="topping">
+                <label for="topping-4">сиропы</label>
               </p>
               <p>
-                <input type="checkbox" id="filter-topping-5" name="filter-topping">
-                <label for="filter-topping-5">джемы</label>
+                <input type="checkbox" id="topping-5" name="topping">
+                <label for="topping-5">джемы</label>
               </p>
             </div>
             <p>
@@ -443,31 +446,7 @@
 
 <!-- ********************Дополнительные окна******************** -->
 
-          <!-- Форма поиска -->
-          <section class="search">
-            <h2 class="visually-hidden">Поиск по сайту</h2>
-            <form class="search-form" method="get" action="#">
-              <input type="search" name="user-search">
-            </form>
-          </section>
-
-          <!-- Форма логина -->
-          <section class="login">
-            <h2 class="visualy-hidden">Личный кабинет</h2>
-            <form class="login-form" method="post" action="#">
-              <p>
-                <input type="email" name="user-email" placeholder="Электронная почта">
-              </p>
-              <p>
-                <input type="password" name="user-password" placeholder="Пароль">
-              </p>
-              <input class="button" type="button" value="Войти">
-              <p class="login-forgot-password"><a href="#">Забыли пароль?</a></p>
-              <p class="login-new-user"><a href="#">Новая регистрация</a></p>
-            </form>
-          </section>
-
-          <!-- Форма корзины с товарами -->
+      <!-- Форма корзины с товарами -->
           <section class="basket-items">
             <h2 class="visually-hidder">Товары в корзине</h2>
             <table>
@@ -496,7 +475,7 @@
               </tfoot>
             </table>
             <p class="checkout">
-              <a class="link-as-button" href="#">Быстрый просмотр</a>
+              <a class="link-as-button" href="#">Оформить заказ</a>
             </p>
           </section>
 
