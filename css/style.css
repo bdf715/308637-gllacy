@@ -13,30 +13,277 @@ address - rgb(255,255,254)
 
 */
 
+@font-family: 'Roboto', 'Arial' sans-serif;
 
 
-body  {
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto';
+  font-weight: 700;
   font-size: 16px;
-  line-height: 22px;
-  color: #ffffff  ;
-  font-weight: normal;
-  font-family: 'Roboto Regular';
+  line-height: 18px;
+  color: #ffffff;
+
+
+  background-color: #849d8f;
+  background-image: url("img/catalog-item-1-1200.jpg");
 }
 
-.banner-name  {
+a {
+  color:#ffffff;
+  font-weight: 500;
+  text-decoration: underline;
+  }
+
+a:hover, a:active, a:focus {
+  color: #ffbc9e;
+  outline: none;
+  }
+/*a:focus {
+  color: #ffbc9e;
+  outline: none;
+}*/
+
+.site-navigation, .user-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #f8f7f4;
+  border-radius: 20px;
+  color: #323232;
+  text-decoration: none;
+  outline: none;
+}
+
+/*.site-navigation a:active {
+
+}*/
+
+.user-navigation a,
+.basket-empty a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  background-color: #a1b4a9;
+  border-radius: 20px;
+}
+
+/*.user-navigation .login::before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 19px;
+  background-image: url("img/entrance.svg");
+}*/
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #f8f7f4;
+  outline: none;
+  color: #323232;
+}
+
+.page-header .working-hours {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.page-header .phone-number {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #eb593c;
+  border-radius: 10px;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #f17c64;
+  outline: none;
+}
+
+.btn:active {
+
+}
+
+.slider p {
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.slider .btn {
+  font-size: 32px;
+  line-height: 44px;
+  border-radius: 15px;
+}
+
+.banner {
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+}
+
+.banner-1 {
+  background-image: url("../img/special-offer-1-1200.jpg");
+}
+
+.banner-2 {
+  background-image: url("../img/special-offer-2-1200.jpg");
+}
+
+.banner h2 {
   font-size: 35px;
   line-height: 41px;
-  color: #323232;
-  font-weight: normal;
-  font-family: 'Roboto Bold';
+}
+
+.banner p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.catalog-item img {
+  border-radius: 50%;
 
 }
 
-.bestseller-item-name  {
+.catalog-item .price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+  .catalog-item .price::after {
+
+  }
+
+.catalog-item .weight {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.features {
+  margin:0;
+  padding:0;
+  width: 1146px;
+  height: 307px;
+  background-image: url("../img/features-pattern.jpg");
+  background-size: contain;
+  background-color: #ebe0c7;
+  border-radius: 15px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.features h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features .feature-items {
+  margin:0;
+  padding:0;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
-  font-weight: normal;
-  font-family: 'Roboto Medium';
+  list-style: none;
+}
 
+.feature-items li::before {
+
+}
+
+.news {
+  width: 560px;
+  height: 220px;
+  background-image: url("../img/news-1200.jpg");
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: #323232;
+  font-weight: 500;
+}
+
+.news h2 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.news a {
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+}
+
+.news a:hover, .news a:active, .news a:focus {
+  color: #e84d37;
+  outline: none;
+}
+
+.subscribe {
+  width: 560px;
+  height: 220px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  border-image-source: url("../img/border-pattern.png");
+  border-image-slice: 5px;
+
+}
+
+.subscribe .caption {
+  color: #5a5a5a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.office {
+  background-color: #f8f7f4;
+}
+
+.office p {
+  font-weight: 400;
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.office .address {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.social {
+  list-style: none;
+}
+
+.about-us {
+  list-style: none;
+}
+
+.about-us a{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.suppliers a {
+  font-weight: 700;
+}
+
+.suppliers::before {
+
+
+}
+
+
+.copyright p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 }
